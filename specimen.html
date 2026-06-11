@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Adservio Fonts — Specimen</title>
+<style>
+  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans[wght].woff2?v=1781157443") format("woff2"); font-weight: 300 700; font-style: normal; }
+  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans-Italic[wght].woff2?v=1781157443") format("woff2"); font-weight: 300 700; font-style: italic; }
+  @font-face { font-family: "Adservio Serif"; src: url("AdservioSerif/webfonts/AdservioSerif-Roman[VF].woff2") format("woff2"); font-weight: 300 700; font-style: normal; }
+  @font-face { font-family: "Adservio Serif"; src: url("AdservioSerif/webfonts/AdservioSerif-Italic[VF].woff2") format("woff2"); font-weight: 300 700; font-style: italic; }
+  @font-face { font-family: "Adservio Mono"; src: url("AdservioMono/webfonts/AdservioMono[wght].woff2") format("woff2"); font-weight: 100 800; font-style: normal; }
+  @font-face { font-family: "Adservio Mono"; src: url("AdservioMono/webfonts/AdservioMono-Italic[wght].woff2") format("woff2"); font-weight: 100 800; font-style: italic; }
+  @font-face { font-family: "Adservio Pixel Square"; src: url("AdservioPixel/webfonts/AdservioPixel-Square.woff2") format("woff2"); }
+  @font-face { font-family: "Adservio Pixel Circle"; src: url("AdservioPixel/webfonts/AdservioPixel-Circle.woff2") format("woff2"); }
+  @font-face { font-family: "Adservio Pixel Grid"; src: url("AdservioPixel/webfonts/AdservioPixel-Grid.woff2") format("woff2"); }
+  @font-face { font-family: "Adservio Pixel Line"; src: url("AdservioPixel/webfonts/AdservioPixel-Line.woff2") format("woff2"); }
+  @font-face { font-family: "Adservio Pixel Triangle"; src: url("AdservioPixel/webfonts/AdservioPixel-Triangle.woff2") format("woff2"); }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #F4F4F2; font-family: "Adservio Sans", sans-serif; color: #000; padding: 28px; }
+  .wrap { max-width: 1500px; margin: 0 auto; }
+  .card { background: #EBEBE8; border-radius: 24px; padding: 28px 36px; margin-bottom: 20px; }
+
+  header.brand { display: flex; align-items: center; gap: 16px; margin: 4px 0 24px; }
+  header.brand svg { display: block; }
+  header.brand .name { font-size: 24px; font-weight: 600; }
+  header.brand .sub { font-size: 14px; color: #6B7080; }
+
+  .bar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  select { appearance: none; background: #fff; border: none; border-radius: 999px; padding: 10px 40px 10px 22px; font: inherit; font-size: 15px; cursor: pointer;
+           background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 4v14m0 0l-6-6m6 6l6-6" stroke="black" stroke-width="2" fill="none"/></svg>');
+           background-repeat: no-repeat; background-position: right 16px center; }
+  select#family { font-weight: 600; }
+  .ctl { background: #fff; border-radius: 999px; padding: 10px 18px; display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; }
+  .ctl input[type=range] { width: 110px; accent-color: #000; }
+  .ctl output { min-width: 34px; text-align: right; font-variant-numeric: tabular-nums; }
+  .spacer { flex: 1; }
+  label.it { background: #fff; border-radius: 999px; padding: 10px 18px; font-size: 14px; font-weight: 500; cursor: pointer; }
+
+  #tester { font-variant-ligatures: common-ligatures; font-feature-settings: 'liga' 1; margin-top: 28px; outline: none; font-size: 110px; line-height: 1.1; min-height: 1.2em; word-break: break-word; }
+
+  h2 { font-size: 18px; font-weight: 600; margin-bottom: 20px; }
+  .wrow { display: flex; align-items: baseline; gap: 24px; padding: 10px 0; border-top: 1px solid #DDDDD8; }
+  .wrow:first-of-type { border-top: none; }
+  .wrow .lbl { width: 170px; flex-shrink: 0; font-size: 13px; color: #6B7080; }
+  .wrow .smp { font-size: 38px; white-space: nowrap; overflow: hidden; }
+
+  .ligs { display: flex; gap: 18px; flex-wrap: wrap; }
+  .lig { background: #fff; border-radius: 18px; padding: 18px 28px; text-align: center; }
+  .lig .gl { font-size: 64px; line-height: 1.1; }
+  .lig .cap { font-size: 12px; color: #6B7080; margin-top: 6px; }
+
+  .overview { display: flex; gap: 36px; align-items: flex-start; }
+  .gridcol { flex: 1; min-width: 0; }
+  .gridcol h3 { font-size: 15px; font-weight: 600; margin: 28px 0 14px; }
+  .gridcol h3:first-child { margin-top: 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, 64px); gap: 12px; }
+  .cell { width: 64px; height: 64px; background: #fff; border-radius: 18px; display: flex; align-items: center; justify-content: center;
+          font-size: 26px; cursor: pointer; user-select: none; }
+  .cell.on { background: #000; color: #fff; }
+  .cell:hover { background: #000; color: #fff; transform: scale(1.08); transition: transform 0.08s; }
+  .cell.off { opacity: 0.25; pointer-events: none; }
+  .viewwrap { width: 46%; position: sticky; top: 20px; }
+  .view { background: #000; color: #fff; border-radius: 24px; position: relative; height: 600px; overflow: hidden; }
+  .view .glyph { position: absolute; left: 0; right: 0; text-align: center; font-size: 300px; line-height: 1; }
+  .view .uni { position: absolute; top: 18px; right: 26px; font-size: 14px; color: #888; z-index: 2; }
+  .mline { position: absolute; left: 0; right: 0; border-top: 1px dashed #555; }
+  .mline span { position: absolute; top: -22px; font-size: 13px; color: #999; }
+  .mline .l { left: 26px; } .mline .n { right: 26px; }
+
+  footer { color: #6B7080; font-size: 13px; text-align: center; margin: 32px 0 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="brand">
+    <svg width="44" height="44" viewBox="0 0 208 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M104 96C92.9583 96 84 104.958 84 116C84 127.042 92.9583 136 104 136C115.042 136 124 127.042 124 116C124 104.958 115.042 96 104 96Z" fill="#0C62FB"/>
+<path d="M104 0C46.5855 0 0 46.8094 0 104.5C0 162.191 46.5855 209 104 209C161.415 209 208 162.191 208 104.5C208 46.8094 161.415 0 104 0ZM158.963 173.688L147.725 169.376C119.733 158.495 88.4715 158.495 60.4794 169.376L49.2417 173.688C44.7466 175.33 40.2515 171.019 41.8861 166.502L92.3536 27.7161C96.4401 16.6297 111.969 16.6297 115.851 27.7161L166.318 166.502C167.749 171.019 163.458 175.33 158.963 173.688Z" fill="#0C62FB"/>
+</svg>
+
+    <div>
+      <div class="name">Adservio Fonts</div>
+      <div class="sub">Sans · Serif · Mono · Pixel — interactive specimen</div>
+    </div>
+  </header>
+
+  <div class="card">
+    <div class="bar">
+      <select id="family"></select>
+      <select id="weight"></select>
+      <label class="it"><input type="checkbox" id="italic"> Italic</label>
+      <div class="spacer"></div>
+      <div class="ctl">Size <input type="range" id="size" min="20" max="280" value="110"><output id="sizeV">110</output></div>
+      <div class="ctl">Leading <input type="range" id="lead" min="0.8" max="2" value="1.1" step="0.05"><output id="leadV">1.1</output></div>
+      <div class="ctl">Spacing <input type="range" id="spc" min="-5" max="20" value="-1" step="0.5"><output id="spcV">-1</output></div>
+    </div>
+    <div id="tester" contenteditable="true" spellcheck="false">“Quality is never an accident; it is always the result of intelligent effort.” — John Ruskin</div>
+  </div>
+
+  <div class="card">
+    <h2>Weights &amp; Styles</h2>
+    <div id="weights"></div>
+  </div>
+
+  <div class="card" id="ligcard">
+    <h2>Ligatures (Adservio Sans, on by default)</h2>
+    <div class="ligs">
+      <div class="lig"><div class="gl">ff</div><div class="cap">f + f</div></div>
+      <div class="lig"><div class="gl">ffi</div><div class="cap">f + f + i</div></div>
+      <div class="lig"><div class="gl">fi</div><div class="cap">f + i</div></div>
+      <div class="lig"><div class="gl">fl</div><div class="cap">f + l</div></div>
+      <div class="lig"><div class="gl">ft</div><div class="cap">f + t</div></div>
+      <div class="lig"><div class="gl">№</div><div class="cap">U+2116</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Glyphs set overview</h2>
+    <div class="overview">
+      <div class="gridcol" id="gridcol"></div>
+      <div class="viewwrap">
+        <div class="view" id="view">
+          <span class="uni" id="uni"></span>
+          <span class="glyph" id="big">A</span>
+          <div id="metrics"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Adservio Fonts — crafted by <strong>Anis ZOUAOUI</strong>, inspired by wonderful open-source typefaces: Inclusive Sans, Junicode, JetBrains Mono &amp; Geist Pixel (SIL OFL 1.1)</footer>
+</div>
+
+<script>
+  const GROUPS = [["Uppercase", [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90]], ["Lowercase", [97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122]], ["Digits", [48, 49, 50, 51, 52, 53, 54, 55, 56, 57]], ["Circled Numbers", [9312, 9313, 9314, 9315, 9316, 9317, 9318, 9319, 9320, 9450, 9471, 10102, 10103, 10104, 10105, 10106, 10107, 10108, 10109, 10110]], ["Uppercase Accents", [192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 216, 217, 218, 219, 220, 221, 222, 256, 258, 260, 262, 264, 266, 268, 270, 272, 274, 276, 278, 280, 282, 284, 286, 288, 290, 292, 294, 296, 298, 300, 302, 304, 306, 308, 310, 313, 315, 317, 319, 321, 323, 325, 327, 330, 332, 334, 336, 338, 340, 342, 344, 346, 348, 350, 352, 354, 356, 360, 362, 364, 366, 368, 370, 372, 374, 376, 377, 379, 381, 390, 399, 400, 413, 416, 431, 508, 510, 536, 538, 7692, 7694, 7712, 7734, 7738, 7750, 7752, 7770, 7774, 7788, 7790, 7808, 7810, 7812, 7838, 7840, 7842, 7844, 7846, 7848, 7850, 7852, 7854, 7856, 7858, 7860, 7862, 7864, 7866, 7868, 7870, 7872, 7874, 7876, 7878, 7880, 7882, 7884, 7886, 7888, 7890, 7892, 7894, 7896, 7898, 7900, 7902, 7904, 7906, 7908, 7910, 7912, 7914, 7916, 7918, 7920, 7922, 7924, 7926, 7928]], ["Lowercase Accents", [170, 186, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 248, 249, 250, 251, 252, 253, 254, 255, 257, 259, 261, 263, 265, 267, 269, 271, 273, 275, 277, 279, 281, 283, 285, 287, 289, 291, 293, 295, 297, 299, 301, 303, 305, 307, 309, 311, 314, 316, 318, 320, 322, 324, 326, 328, 331, 333, 335, 337, 339, 341, 343, 345, 347, 349, 351, 353, 355, 357, 361, 363, 365, 367, 369, 371, 373, 375, 378, 380, 382, 417, 432, 509, 511, 537, 539, 567, 596, 601, 603, 626, 627, 7693, 7695, 7713, 7735, 7739, 7751, 7753, 7771, 7775, 7789, 7791, 7809, 7811, 7813, 7841, 7843, 7845, 7847, 7849, 7851, 7853, 7855, 7857, 7859, 7861, 7863, 7865, 7867, 7869, 7871, 7873, 7875, 7877, 7879, 7881, 7883, 7885, 7887, 7889, 7891, 7893, 7895, 7897, 7899, 7901, 7903, 7905, 7907, 7909, 7911, 7913, 7915, 7917, 7919, 7921, 7923, 7925, 7927, 7929]], ["Punctuation & Symbols", [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 58, 59, 60, 61, 62, 63, 64, 91, 92, 93, 94, 95, 96, 123, 124, 125, 126, 160, 161, 167, 168, 169, 171, 174, 175, 176, 177, 180, 182, 183, 184, 187, 191, 215, 247, 710, 711, 728, 729, 730, 731, 732, 733, 8211, 8212, 8216, 8217, 8218, 8220, 8221, 8222, 8226, 8230, 8249, 8250]], ["Currency", [162, 163, 165, 3647, 8364, 8377]], ["Letterlike Symbols", [8470, 8482]], ["Arrows", [8592, 8593, 8594, 8595, 8596, 8597, 8598, 8599, 8600, 8601]], ["Mathematical Operators", [8722, 8901]]];
+  const FAM = {"Adservio Sans": {"metrics": {"ascender": 950, "capHeight": 700, "xHeight": 500, "descender": -250}, "missing": []}, "Adservio Serif": {"metrics": {"ascender": 860, "capHeight": 663, "xHeight": 415, "descender": -410}, "missing": [3647, 8377, 8470, 8596, 8597, 8598, 8599, 8600, 8601, 8901]}, "Adservio Mono": {"metrics": {"ascender": 1020, "capHeight": 730, "xHeight": 550, "descender": -300}, "missing": [306, 307, 390, 413, 596, 603, 626, 627, 817, 3647, 7692, 7693, 7694, 7695, 7712, 7713, 7734, 7735, 7738, 7739, 7750, 7751, 7752, 7753, 7770, 7771, 7774, 7775, 7788, 7789, 7790, 7791, 8377, 8901, 9312, 9313, 9314, 9315, 9316, 9317, 9318, 9319, 9320, 9450, 9471, 10102, 10103, 10104, 10105, 10106, 10107, 10108, 10109, 10110]}, "Adservio Pixel Square": {"metrics": {"ascender": 1005, "capHeight": 722, "xHeight": 532, "descender": -295}, "missing": [276, 277, 300, 301, 319, 320, 330, 331, 334, 335, 390, 400, 413, 416, 417, 431, 432, 508, 509, 510, 511, 596, 603, 626, 627, 777, 795, 803, 817, 3647, 7692, 7693, 7694, 7695, 7734, 7735, 7738, 7739, 7750, 7751, 7752, 7753, 7770, 7771, 7774, 7775, 7788, 7789, 7790, 7791, 7840, 7841, 7842, 7843, 7844, 7845, 7846, 7847, 7848, 7849, 7850, 7851, 7852, 7853, 7854, 7855, 7856, 7857, 7858, 7859, 7860, 7861, 7862, 7863, 7864, 7865, 7866, 7867, 7870, 7871, 7872, 7873, 7874, 7875, 7876, 7877, 7878, 7879, 7880, 7881, 7882, 7883, 7884, 7885, 7886, 7887, 7888, 7889, 7890, 7891, 7892, 7893, 7894, 7895, 7896, 7897, 7898, 7899, 7900, 7901, 7902, 7903, 7904, 7905, 7906, 7907, 7908, 7909, 7910, 7911, 7912, 7913, 7914, 7915, 7916, 7917, 7918, 7919, 7920, 7921, 7924, 7925, 7926, 7927, 8377, 8901, 9312, 9313, 9314, 9315, 9316, 9317, 9318, 9319, 9320, 9450, 9471, 10102, 10103, 10104, 10105, 10106, 10107, 10108, 10109, 10110]}};
+
+  const FAMILIES = {
+    'Adservio Sans':  { weights: {300:'Light',400:'Regular',500:'Medium',600:'SemiBold',700:'Bold'}, italic: true, data: 'Adservio Sans' },
+    'Adservio Serif': { weights: {300:'Light',400:'Regular',500:'Medium',600:'SemiBold',700:'Bold'}, italic: true, data: 'Adservio Serif' },
+    'Adservio Mono':  { weights: {100:'Thin',200:'ExtraLight',300:'Light',400:'Regular',500:'Medium',600:'SemiBold',700:'Bold',800:'ExtraBold'}, italic: true, data: 'Adservio Mono' },
+    'Adservio Pixel Square':   { weights: {400:'Regular'}, italic: false, data: 'Adservio Pixel Square' },
+    'Adservio Pixel Circle':   { weights: {400:'Regular'}, italic: false, data: 'Adservio Pixel Square' },
+    'Adservio Pixel Grid':     { weights: {400:'Regular'}, italic: false, data: 'Adservio Pixel Square' },
+    'Adservio Pixel Line':     { weights: {400:'Regular'}, italic: false, data: 'Adservio Pixel Square' },
+    'Adservio Pixel Triangle': { weights: {400:'Regular'}, italic: false, data: 'Adservio Pixel Square' },
+  };
+
+  const $ = id => document.getElementById(id);
+  const state = { family: 'Adservio Sans', weight: 400, italic: false, size: 110, lead: 1.1, spc: -1 };
+
+  // ---- contrôles ----
+  const famSel = $('family');
+  Object.keys(FAMILIES).forEach(f => famSel.add(new Option(f, f)));
+
+  function fillWeights() {
+    const w = FAMILIES[state.family].weights;
+    $('weight').innerHTML = '';
+    Object.entries(w).forEach(([v, n]) => $('weight').add(new Option(`${n} · ${v}`, v)));
+    if (!w[state.weight]) state.weight = 400;
+    $('weight').value = state.weight;
+    $('italic').disabled = !FAMILIES[state.family].italic;
+    if ($('italic').disabled) { $('italic').checked = false; state.italic = false; }
+  }
+
+  function apply() {
+    const fam = `"${state.family}", sans-serif`;
+    const t = $('tester');
+    t.style.fontFamily = fam;
+    t.style.fontWeight = state.weight;
+    t.style.fontStyle = state.italic ? 'italic' : 'normal';
+    t.style.fontSize = state.size + 'px';
+    t.style.lineHeight = state.lead;
+    t.style.letterSpacing = state.spc == 0 ? 'normal' : (state.spc / 100) + 'em';
+    $('big').style.fontFamily = fam;
+    $('big').style.fontWeight = state.weight;
+    $('big').style.fontStyle = state.italic ? 'italic' : 'normal';
+    document.querySelectorAll('.cell').forEach(c => { c.style.fontFamily = fam; c.style.fontWeight = state.weight; });
+    document.querySelectorAll('.lig .gl').forEach(e => e.style.fontWeight = state.weight);
+    renderWeights(); renderMetrics(); positionGlyph(); updateCoverage();
+    $('sizeV').value = state.size; $('leadV').value = state.lead; $('spcV').value = state.spc;
+  }
+
+  famSel.onchange = () => { state.family = famSel.value; fillWeights(); apply(); };
+  $('weight').onchange = e => { state.weight = +e.target.value; apply(); };
+  $('italic').onchange = e => { state.italic = e.target.checked; apply(); };
+  $('size').oninput = e => { state.size = +e.target.value; apply(); };
+  $('lead').oninput = e => { state.lead = +e.target.value; apply(); };
+  $('spc').oninput = e => { state.spc = +e.target.value; apply(); };
+
+  // ---- section graisses ----
+  function renderWeights() {
+    const fam = `'${state.family}', sans-serif`;
+    const w = FAMILIES[state.family].weights;
+    const it = FAMILIES[state.family].italic;
+    let html = '';
+    for (const [v, n] of Object.entries(w)) {
+      html += `<div class="wrow"><div class="lbl">${n} · ${v}</div><div class="smp" style="font-family:${fam};font-weight:${v};font-variation-settings:'wght' ${v}">Simplicity is the ultimate sophistication.</div></div>`;
+      if (it) html += `<div class="wrow"><div class="lbl">${n} Italic</div><div class="smp" style="font-family:${fam};font-weight:${v};font-style:italic;font-variation-settings:'wght' ${v}">Well begun is half done.</div></div>`;
+    }
+    $('weights').innerHTML = html;
+  }
+
+  // ---- grille de glyphes ----
+  let active = null, current = 'A';
+  const gridcol = $('gridcol');
+  const NOTES = {
+    'Arrows': 'Mac : ⌃⌘Espace (Emoji & Symboles), chercher « arrow ». Windows : Win+. (panneau symboles) ou Alt+24 ↑ · Alt+25 ↓ · Alt+26 → · Alt+27 ← (pavé numérique).',
+    'Circled Numbers': 'Mac : ⌃⌘Espace puis chercher « circled ». Windows : Win+. onglet Symboles, ou taper 2460 puis Alt+X dans Word.',
+  };
+  GROUPS.forEach(([name, cps]) => {
+    const h = document.createElement('h3'); h.textContent = name; gridcol.appendChild(h);
+    if (NOTES[name]) { const p = document.createElement('p'); p.style.cssText = 'font-size:12px;color:#6B7080;margin:-8px 0 12px;'; p.textContent = NOTES[name]; gridcol.appendChild(p); }
+    const g = document.createElement('div'); g.className = 'grid'; gridcol.appendChild(g);
+    cps.forEach(cp => {
+      const c = document.createElement('div');
+      c.className = 'cell'; c.dataset.cp = cp; c.textContent = String.fromCodePoint(cp);
+      const show = () => {
+        if (active) active.classList.remove('on');
+        c.classList.add('on'); active = c; current = c.textContent;
+        $('big').textContent = current;
+        $('uni').textContent = 'U+' + cp.toString(16).toUpperCase().padStart(4, '0');
+        positionGlyph();
+      };
+      c.onclick = show;
+      c.onmouseenter = show;
+      g.appendChild(c);
+    });
+  });
+
+  function updateCoverage() {
+    const missing = new Set(FAM[FAMILIES[state.family].data].missing);
+    document.querySelectorAll('.cell').forEach(c => c.classList.toggle('off', missing.has(+c.dataset.cp)));
+  }
+
+  // ---- preview : métriques + alignement baseline ----
+  const PANEL_H = 600, BASE_BOTTOM = 170, GSIZE = 300;
+  function metricsOf() { return FAM[FAMILIES[state.family].data].metrics; }
+
+  function renderMetrics() {
+    const m = metricsOf();
+    const lines = [['Ascender', m.ascender], ['Cap Height', m.capHeight], ['x-height', m.xHeight], ['Baseline', 0], ['Descender', m.descender]];
+    $('metrics').innerHTML = lines.map(([lbl, val]) =>
+      `<div class="mline" style="bottom:${BASE_BOTTOM + val * GSIZE / 1000}px"><span class="l">${lbl}</span><span class="n">${val}</span></div>`
+    ).join('');
+  }
+
+  function positionGlyph() {
+    // place la baseline du glyphe exactement sur la ligne Baseline
+    const m = metricsOf();
+    const asc = m.ascender / 1000, desc = m.descender / 1000;
+    // line-height:1 → demi-interligne = (1 - (asc - desc)) / 2 ; baseline depuis le haut du span :
+    const baselineFromTop = GSIZE * ((1 - (asc - desc)) / 2 + asc);
+    const baselineFromPanelTop = PANEL_H - BASE_BOTTOM;
+    $('big').style.fontSize = GSIZE + 'px';
+    $('big').style.top = (baselineFromPanelTop - baselineFromTop) + 'px';
+  }
+
+  // ---- init ----
+  fillWeights();
+  apply();
+  document.querySelector('.cell').click();
+</script>
+</body>
+</html>
