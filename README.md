@@ -6,6 +6,8 @@
 
 Quatre familles de caractères pour l'identité Adservio. Toutes sous licence SIL Open Font License 1.1 (OFL.txt dans chaque dossier).
 
+![Adservio Serif — citation d'Andrej Karpathy](docs/images/specimen-serif.png)
+
 ## Familles
 
 | Famille | Usage | Graisses | Origine |
@@ -52,8 +54,6 @@ Quatre familles de caractères pour l'identité Adservio. Toutes sous licence SI
 ![Graisses et styles](docs/images/specimen-weights.png)
 
 ![Ligatures](docs/images/specimen-ligatures.png)
-
-![Adservio Serif — citation d'Andrej Karpathy](docs/images/specimen-serif.png)
 
 ![Grille de glyphes et métriques](docs/images/specimen-glyphs.png)
 
