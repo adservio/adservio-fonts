@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <title>Adservio Fonts — Specimen</title>
 <style>
-  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans[wght].woff2?v=1781159701") format("woff2"); font-weight: 300 700; font-style: normal; }
-  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans-Italic[wght].woff2?v=1781159701") format("woff2"); font-weight: 300 700; font-style: italic; }
+  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans[wght].woff2?v=1781160030") format("woff2"); font-weight: 300 700; font-style: normal; }
+  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans-Italic[wght].woff2?v=1781160030") format("woff2"); font-weight: 300 700; font-style: italic; }
   @font-face { font-family: "Adservio Serif"; src: url("AdservioSerif/webfonts/AdservioSerif-Roman[VF].woff2") format("woff2"); font-weight: 300 700; font-style: normal; }
   @font-face { font-family: "Adservio Serif"; src: url("AdservioSerif/webfonts/AdservioSerif-Italic[VF].woff2") format("woff2"); font-weight: 300 700; font-style: italic; }
   @font-face { font-family: "Adservio Mono"; src: url("AdservioMono/webfonts/AdservioMono[wght].woff2") format("woff2"); font-weight: 100 800; font-style: normal; }
@@ -17,14 +17,14 @@
   @font-face { font-family: "Adservio Pixel Triangle"; src: url("AdservioPixel/webfonts/AdservioPixel-Triangle.woff2") format("woff2"); }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #F4F4F2; font-family: "Adservio Sans", sans-serif; color: #000; padding: 28px; }
+  body { background: #F4F4F5; font-family: "Adservio Sans", sans-serif; color: #000; padding: 28px; }
   .wrap { max-width: 1500px; margin: 0 auto; }
-  .card { background: #EBEBE8; border-radius: 24px; padding: 28px 36px; margin-bottom: 20px; }
+  .card { background: #F5F5F7; border-radius: 24px; padding: 28px 36px; margin-bottom: 20px; }
 
   header.brand { display: flex; align-items: center; gap: 16px; margin: 4px 0 24px; }
   header.brand svg { display: block; }
   header.brand .name { font-size: 24px; font-weight: 600; }
-  header.brand .sub { font-size: 14px; color: #6B7080; }
+  header.brand .sub { font-size: 14px; color: #6E6E73; }
 
   .bar { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
   select { appearance: none; background: #fff; border: none; border-radius: 999px; padding: 10px 40px 10px 22px; font: inherit; font-size: 15px; cursor: pointer;
@@ -39,16 +39,16 @@
 
   #tester { font-variant-ligatures: common-ligatures; font-feature-settings: 'liga' 1; margin-top: 28px; outline: none; font-size: 110px; line-height: 1.1; min-height: 1.2em; word-break: break-word; }
 
-  h2 { font-size: 18px; font-weight: 600; margin-bottom: 20px; }
-  .wrow { display: flex; align-items: baseline; gap: 24px; padding: 10px 0; border-top: 1px solid #DDDDD8; }
+  h2 { font-size: 18px; font-weight: 600; margin-bottom: 20px; color: #1D1D1F; }
+  .wrow { display: flex; align-items: baseline; gap: 24px; padding: 10px 0; border-top: 1px solid #E8E8E8; }
   .wrow:first-of-type { border-top: none; }
-  .wrow .lbl { width: 170px; flex-shrink: 0; font-size: 13px; color: #6B7080; }
+  .wrow .lbl { width: 170px; flex-shrink: 0; font-size: 13px; color: #86868B; }
   .wrow .smp { font-size: 38px; white-space: nowrap; overflow: hidden; }
 
   .ligs { display: flex; gap: 18px; flex-wrap: wrap; }
   .lig { background: #fff; border-radius: 18px; padding: 18px 28px; text-align: center; }
   .lig .gl { font-size: 64px; line-height: 1.1; }
-  .lig .cap { font-size: 12px; color: #6B7080; margin-top: 6px; }
+  .lig .cap { font-size: 12px; color: #86868B; margin-top: 6px; }
 
   .overview { display: flex; gap: 36px; align-items: flex-start; }
   .gridcol { flex: 1; min-width: 0; }
@@ -71,34 +71,34 @@
 
   /* Showcase cards */
   .show { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  .sc { border-radius: 20px; padding: 28px; min-height: 260px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #E2E0DA; }
+  .sc { border-radius: 20px; padding: 28px; min-height: 260px; display: flex; flex-direction: column; justify-content: space-between; }
   .sc .tag { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
   .sc .tag::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
   .sc h4 { font-size: 30px; font-weight: 600; line-height: 1.15; margin: 14px 0; }
   .sc p { font-size: 14px; color: inherit; opacity: 0.75; }
-  .sc-cream { background: #F0EEE6; color: #29261B; }
-  .sc-cream .tag { color: #C15F3C; }
-  .sc-ink { background: #14143C; color: #F4F3EE; }
-  .sc-ink .tag { color: #8FA3FF; }
-  .sc-code { background: #1F1E1D; color: #E8E6E0; font-family: 'Adservio Mono', monospace; }
-  .sc-code .tag { color: #61AAF2; font-family: 'Adservio Sans', sans-serif; }
+  .sc-cream { background: #F2EADE; color: #1D1D1F; }
+  .sc-cream .tag { color: #0C62FB; }
+  .sc-ink { background: #1D1D1F; color: #F5F5F7; }
+  .sc-ink .tag { color: #A684FF; }
+  .sc-code { background: #1D1D1F; color: #F5F5F7; font-family: 'Adservio Mono', monospace; }
+  .sc-code .tag { color: #8C52FF; font-family: 'Adservio Sans', sans-serif; }
   .sc-code pre { font-size: 14.5px; line-height: 1.75; white-space: pre-wrap; margin: 14px 0; }
-  .sc-code .c { color: #8C8A85; } .sc-code .k { color: #DE8F6E; } .sc-code .s { color: #A3C9A4; }
-  .sc-serif { background: #FAF9F5; color: #29261B; font-family: 'Adservio Serif', serif; }
-  .sc-serif .tag { color: #C15F3C; font-family: 'Adservio Sans', sans-serif; }
+  .sc-code .c { color: #86868B; } .sc-code .k { color: #FF914D; } .sc-code .s { color: #00C9A7; } .sc-code .p { color: #FF66C4; }
+  .sc-serif { background: #FFFFFF; border: 1px solid #E8E8E8; color: #1D1D1F; font-family: 'Adservio Serif', serif; }
+  .sc-serif .tag { color: #B85070; font-family: 'Adservio Sans', sans-serif; }
   .sc-serif blockquote { font-size: 24px; line-height: 1.35; margin: 14px 0; }
   .sc-serif cite { font-style: italic; font-size: 15px; opacity: 0.7; }
-  .sc-pixel { background: #2B43FF; color: #fff; }
-  .sc-pixel .tag { color: #BFD0FF; }
+  .sc-pixel { background: linear-gradient(135deg, #0047FF 0%, #00BFFF 100%); color: #fff; }
+  .sc-pixel .tag { color: #C8E2F8; }
   .sc-pixel h4 { font-family: 'Adservio Pixel Square', monospace; font-size: 40px; font-weight: 400; }
-  .sc-stats { background: #fff; color: #14143C; }
-  .sc-stats .tag { color: #2B43FF; }
+  .sc-stats { background: #FFFFFF; border: 1px solid #E8E8E8; color: #1D1D1F; }
+  .sc-stats .tag { color: #00C9A7; }
   .sc-stats .nums { display: flex; gap: 28px; margin: 14px 0; }
   .sc-stats .n b { display: block; font-size: 40px; font-weight: 700; font-variant-numeric: tabular-nums; }
-  .sc-stats .n span { font-size: 12.5px; color: #6B7080; }
+  .sc-stats .n span { font-size: 12.5px; color: #86868B; }
   @media (max-width: 1100px) { .show { grid-template-columns: 1fr; } }
 
-  footer { color: #6B7080; font-size: 13px; text-align: center; margin: 32px 0 8px; }
+  footer { color: #86868B; font-size: 13px; text-align: center; margin: 32px 0 8px; }
 </style>
 </head>
 <body>
@@ -157,9 +157,9 @@
       <div class="sc sc-code">
         <span class="tag">Adservio Mono</span>
         <pre><span class="c">// Code is not cheap.</span>
-<span class="k">const</span> craft = (idea) =&gt; {
+<span class="k">const</span> craft = (idea) <span class="p">=&gt;</span> {
   <span class="k">return</span> effort &gt;= <span class="s">'intelligent'</span>
-    ? ship(idea) : refine(idea);
+    <span class="p">?</span> ship(idea) <span class="p">:</span> refine(idea);
 };</pre>
         <p>Coding ligatures, eight weights, built for long sessions.</p>
       </div>
