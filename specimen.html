@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <title>Adservio Fonts — Specimen</title>
 <style>
-  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans[wght].woff2?v=1781157443") format("woff2"); font-weight: 300 700; font-style: normal; }
-  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans-Italic[wght].woff2?v=1781157443") format("woff2"); font-weight: 300 700; font-style: italic; }
+  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans[wght].woff2?v=1781159701") format("woff2"); font-weight: 300 700; font-style: normal; }
+  @font-face { font-family: "Adservio Sans"; src: url("AdservioSans/webfonts/AdservioSans-Italic[wght].woff2?v=1781159701") format("woff2"); font-weight: 300 700; font-style: italic; }
   @font-face { font-family: "Adservio Serif"; src: url("AdservioSerif/webfonts/AdservioSerif-Roman[VF].woff2") format("woff2"); font-weight: 300 700; font-style: normal; }
   @font-face { font-family: "Adservio Serif"; src: url("AdservioSerif/webfonts/AdservioSerif-Italic[VF].woff2") format("woff2"); font-weight: 300 700; font-style: italic; }
   @font-face { font-family: "Adservio Mono"; src: url("AdservioMono/webfonts/AdservioMono[wght].woff2") format("woff2"); font-weight: 100 800; font-style: normal; }
@@ -68,6 +68,36 @@
   .mline span { position: absolute; top: -22px; font-size: 13px; color: #999; }
   .mline .l { left: 26px; } .mline .n { right: 26px; }
 
+
+  /* Showcase cards */
+  .show { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .sc { border-radius: 20px; padding: 28px; min-height: 260px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #E2E0DA; }
+  .sc .tag { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
+  .sc .tag::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+  .sc h4 { font-size: 30px; font-weight: 600; line-height: 1.15; margin: 14px 0; }
+  .sc p { font-size: 14px; color: inherit; opacity: 0.75; }
+  .sc-cream { background: #F0EEE6; color: #29261B; }
+  .sc-cream .tag { color: #C15F3C; }
+  .sc-ink { background: #14143C; color: #F4F3EE; }
+  .sc-ink .tag { color: #8FA3FF; }
+  .sc-code { background: #1F1E1D; color: #E8E6E0; font-family: 'Adservio Mono', monospace; }
+  .sc-code .tag { color: #61AAF2; font-family: 'Adservio Sans', sans-serif; }
+  .sc-code pre { font-size: 14.5px; line-height: 1.75; white-space: pre-wrap; margin: 14px 0; }
+  .sc-code .c { color: #8C8A85; } .sc-code .k { color: #DE8F6E; } .sc-code .s { color: #A3C9A4; }
+  .sc-serif { background: #FAF9F5; color: #29261B; font-family: 'Adservio Serif', serif; }
+  .sc-serif .tag { color: #C15F3C; font-family: 'Adservio Sans', sans-serif; }
+  .sc-serif blockquote { font-size: 24px; line-height: 1.35; margin: 14px 0; }
+  .sc-serif cite { font-style: italic; font-size: 15px; opacity: 0.7; }
+  .sc-pixel { background: #2B43FF; color: #fff; }
+  .sc-pixel .tag { color: #BFD0FF; }
+  .sc-pixel h4 { font-family: 'Adservio Pixel Square', monospace; font-size: 40px; font-weight: 400; }
+  .sc-stats { background: #fff; color: #14143C; }
+  .sc-stats .tag { color: #2B43FF; }
+  .sc-stats .nums { display: flex; gap: 28px; margin: 14px 0; }
+  .sc-stats .n b { display: block; font-size: 40px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .sc-stats .n span { font-size: 12.5px; color: #6B7080; }
+  @media (max-width: 1100px) { .show { grid-template-columns: 1fr; } }
+
   footer { color: #6B7080; font-size: 13px; text-align: center; margin: 32px 0 8px; }
 </style>
 </head>
@@ -113,6 +143,50 @@
       <div class="lig"><div class="gl">fl</div><div class="cap">f + l</div></div>
       <div class="lig"><div class="gl">ft</div><div class="cap">f + t</div></div>
       <div class="lig"><div class="gl">№</div><div class="cap">U+2116</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Showcase</h2>
+    <div class="show">
+      <div class="sc sc-cream">
+        <span class="tag">Announcement</span>
+        <h4>Introducing Adservio Sans — a friendlier face for digital excellence.</h4>
+        <p>Single-storey a &amp; g, rounded G, dotted J, five weights with true italics.</p>
+      </div>
+      <div class="sc sc-code">
+        <span class="tag">Adservio Mono</span>
+        <pre><span class="c">// Code is not cheap.</span>
+<span class="k">const</span> craft = (idea) =&gt; {
+  <span class="k">return</span> effort &gt;= <span class="s">'intelligent'</span>
+    ? ship(idea) : refine(idea);
+};</pre>
+        <p>Coding ligatures, eight weights, built for long sessions.</p>
+      </div>
+      <div class="sc sc-serif">
+        <span class="tag">Editorial</span>
+        <blockquote>“2026 is going to be a high energy year as the industry metabolizes the new capability.”</blockquote>
+        <cite>— Andrej Karpathy</cite>
+      </div>
+      <div class="sc sc-ink">
+        <span class="tag">Ligatures</span>
+        <h4 style="font-size:44px">efficace, effort, reflet, souffle</h4>
+        <p>ff · ffi · fi · fl · ft — on by default, dot preserved.</p>
+      </div>
+      <div class="sc sc-pixel">
+        <span class="tag">Display</span>
+        <h4>PIXEL MODE 2026</h4>
+        <p>Five pixel shapes: Square, Circle, Grid, Line, Triangle.</p>
+      </div>
+      <div class="sc sc-stats">
+        <span class="tag">Numerals</span>
+        <div class="nums">
+          <div class="n"><b>0123</b><span>slashless zero</span></div>
+          <div class="n"><b>❶❷❸</b><span>circled, negative</span></div>
+          <div class="n"><b>①②③</b><span>circled, outline</span></div>
+        </div>
+        <p>Clean figures for dashboards and data-heavy interfaces.</p>
+      </div>
     </div>
   </div>
 
