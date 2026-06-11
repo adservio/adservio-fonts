@@ -53,6 +53,8 @@ Quatre familles de caractères pour l'identité Adservio. Toutes sous licence SI
 
 ![Ligatures](docs/images/specimen-ligatures.png)
 
+![Adservio Serif — citation d'Andrej Karpathy](docs/images/specimen-serif.png)
+
 ![Grille de glyphes et métriques](docs/images/specimen-glyphs.png)
 
 ![Prévisualisation d'un glyphe avec lignes de métriques](docs/images/specimen-preview-G.png)
