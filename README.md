@@ -49,7 +49,13 @@ Quatre familles de caractères pour l'identité Adservio. Toutes sous licence SI
 
 ## Spécimen
 
+![Graisses et styles](docs/images/specimen-weights.png)
+
+![Ligatures](docs/images/specimen-ligatures.png)
+
 ![Grille de glyphes et métriques](docs/images/specimen-glyphs.png)
+
+![Prévisualisation d'un glyphe avec lignes de métriques](docs/images/specimen-preview-G.png)
 
 Version en ligne : [adservio.github.io/adservio-fonts](https://adservio.github.io/adservio-fonts/) — ou ouvrir `specimen.html` à la racine du package : testeur interactif (taille, interligne, espacement, graisses, italique), grille complète des glyphes et prévisualisation avec lignes de métriques pour les quatre familles.
 
