@@ -19,11 +19,26 @@ Quatre familles de caractères pour l'identité Adservio. Toutes sous licence SI
 
 ## Particularités d'Adservio Sans
 
-- « a » et « g » simplifiés (simple étage) par défaut
-- Zéro sans barre
-- G majuscule à coin de fût arrondi
-- J majuscule avec barre et point
-- Ligatures actives par défaut : ff, ffi, fi (avec point), fl, ft
+- « g » simple étage par défaut, pied en L à angle intérieur droit ; « a » à deux étages
+- k et K géométriques : fût + barre horizontale + deux diagonales quasi égales
+- f à coude serré et sommet plat ; r simple en L
+- Série « extérieur arrondi / intérieur droit » : a, d, g, q, r, t, y
+- Zéro sans barre, G à coin de fût arrondi, J avec barre et point
+- Signe + à nœud central doux (congés intérieurs), lignes fines
+- Ligatures actives par défaut : ff, ffi, fi (point détaché), fl, ft
+
+## Nouveautés — Adservio Sans 2.015 (18 juillet 2026)
+
+- **k / K** : nouveau dessin géométrique (fût, barre horizontale à mi-hauteur, diagonales quasi égales)
+- **f** : coude supérieur serré, sommet plat, traits allongés — répercuté sur les 5 ligatures dessinées
+- **g** : la variante simple étage devient le défaut ; pied horizontal long, coude adouci puis angle intérieur droit
+- **y** : barre inférieure allongée, épaisseur constante (pointe non effilée)
+- **q, t, d, a** : pieds et crochets refaits — extérieur arrondi, angle intérieur droit ; barre du q allongée
+- **r** : bras simplifié en L (extérieur arrondi, intérieur droit)
+- **fi / ffi** : point de l'i descendu (Light/Regular) ou décollé (Bold) pour ne plus toucher le crochet du f
+- **+** : croix monobloc à congés intérieurs, lignes affinées, nœud central marqué en Light/Regular
+- **Adservio Serif** : chiffres alignés (lining) par défaut sur toute la famille
+- Spécimen : citation John Ruskin avec « + » en texte des graisses et carte « Quality + Craft »
 
 ## Contenu de chaque dossier
 
