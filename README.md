@@ -23,9 +23,23 @@ Quatre familles de caractères pour l'identité Adservio. Toutes sous licence SI
 - k et K géométriques : fût + barre horizontale + deux diagonales quasi égales
 - f à coude serré et sommet plat ; r simple en L
 - Série « extérieur arrondi / intérieur droit » : a, d, g, q, r, t, y
-- Zéro sans barre, G à coin de fût arrondi, J avec barre et point
+- Chiffres : 0 en rectangle arrondi à contre presque droit, 1 à drapeau en L et base large, 2 à jambe verticale puis diagonale (épaisseur constante) — 0/1/2 isochasses
+- Zéro sans barre, G à coin de fût arrondi, J à coin arrondi + queue en L (ancien J en `ss02`), Q à queue verticale tournant à droite
+- l à pied, j et J à queue plate (pattern du g), X à congés concaves façon +, x épuré à creux vifs
+- Guillemets typographiques en blocs géométriques (encoche à angles droits, grand arrondi extérieur — réf. Oswald)
 - Signe + à nœud central doux (congés intérieurs), lignes fines
 - Ligatures actives par défaut : ff, ffi, fi (point détaché), fl, ft
+
+## Nouveautés — Adservio Sans 2.021 (19 juillet 2026)
+
+- **1** : drapeau refait en L (sommet plat, coupe verticale, coude arrondi côté fût, allongé à l'aplomb du pied) ; pied élargi à la base du 2 — 0, 1 et 2 isochasses
+- **0** : extérieur en rectangle arrondi (plats alignés), contre rectangulaire à congés légers
+- **2** : jambe reconstruite sur ligne centrale offsetée — vertical court depuis la base puis virage à droite, épaisseur rigoureusement constante ; coin extérieur bas-gauche arrondi
+- **j, l** : queue basse du j au pattern du g ; l doté d'un pied à droite (géométrie du t) — ligature fl et composés élargis
+- **J** : coin haut-droit arrondi + queue plate sur la ligne de base ; l'ancien J reste accessible via `ss02`
+- **Q** : le tiret diagonal remplacé par une queue verticale qui tourne à droite (pattern du q)
+- **X** : croix monobloc à congés concaves (langage du +) ; **x** épuré à diagonales pures et creux vifs
+- **Guillemets ' ' " "** : blocs géométriques compacts — encoche à angles droits, grand arrondi extérieur (référence Oswald)
 
 ## Nouveautés — Adservio Sans 2.015 (18 juillet 2026)
 
